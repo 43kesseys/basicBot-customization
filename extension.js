@@ -40,7 +40,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Bacon!!!");
+                    API.sendChat("/me Memes!!! XDXD");
                 }
             }
         };
@@ -53,20 +53,20 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "girtehbot",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
         maximumAfk: 120,
-        afkRemoval: true,
+        afkRemoval: false,
         maximumDc: 60,
         bouncerPlus: true,
         lockdownEnabled: false,
         lockGuard: false,
         maximumLocktime: 10,
-        cycleGuard: true,
+        cycleGuard: false,
         maximumCycletime: 10,
         voteSkip: false,
         voteSkipLimit: 10,
@@ -86,11 +86,11 @@
             ["unavailable", "The song you played was not available for some users. "]
         ],
         afkpositionCheck: 15,
-        afkRankCheck: "ambassador",
+        afkRankCheck: "residentdj",
         motdEnabled: false,
         motdInterval: 5,
         motd: "Temporary Message of the Day",
-        filterChat: true,
+        filterChat: false,
         etaRestriction: false,
         welcome: true,
         opLink: null,
@@ -99,7 +99,7 @@
         fbLink: null,
         youtubeLink: null,
         website: null,
-        intervalMessages: [],
+        intervalMessages: ["Ayy lmao!"],
         messageInterval: 5,
         songstats: true,
         commandLiteral: "!",
