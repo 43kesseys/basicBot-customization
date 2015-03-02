@@ -40,22 +40,22 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me test!!! XDXD");
+                    API.sendChat("/me test2!!! XDXD");
                 }
             }
         };
-	bot.commands.loveCommand = {
-		command: 'love',
-		rank: 'user',
-		type: 'exact',
-		funcionality: function (chat, cmd) {
-			if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-			if (!bot.commands.executable(this.rank, chat)) return void (0);
-			else {
-				API.sendChat("I love you, too! :D <3");
-			}
-		}
-	};
+        bot.commands.loveCommand = {
+            command: 'love',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("I love you, too! :D <3");
+                }
+            }
+        };
         //Load the chat package again to account for any changes
         bot.loadChat();
 
