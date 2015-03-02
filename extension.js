@@ -44,7 +44,7 @@
                 }
             }
         };
-                bot.commands.cuddleCommand: {
+            bot.commands.cuddleCommand: {
                 command: 'cuddle',
                 rank: 'user',
                 type: 'startsWith',
@@ -99,7 +99,7 @@
                         }
                     }
                 }
-            },
+            };
         /*bot.commands.loveCommand = {
             command: 'love',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
