@@ -44,7 +44,7 @@
                 }
             }
         };
-        bot.commands.cuddleCommand: {
+        bot.commands.cuddleCommand = {
             command: 'cuddle',
             rank: 'user',
             type: 'startsWith',
