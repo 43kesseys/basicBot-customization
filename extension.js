@@ -40,11 +40,11 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("I love you, too! :D <3");
+                    API.sendChat("I love you too, sweetie! :D <3");
                 }
             }
         };
-        /*bot.commands.cuddleCommand: {
+        bot.commands.cuddleCommand: {
             command: 'cuddle',
             rank: 'user',
             type: 'startsWith',
@@ -99,7 +99,7 @@
                     }
                 }
             }
-        };*/
+        };
         //Load the chat package again to account for any changes
         bot.loadChat();
 
