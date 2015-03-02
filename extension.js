@@ -40,11 +40,22 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Memes!!! XDXD");
+                    API.sendChat("/me test!!! XDXD");
                 }
             }
         };
-
+	bot.commands.loveCommand = {
+		command: 'love',
+		rank: 'user',
+		type: 'exact',
+		funcionality: function (chat, cmd) {
+			if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+			if (!bot.commands.executable(this.rank, chat)) return void (0);
+			else {
+				API.sendChat("I love you, too! :D <3");
+			}
+		}
+	};
         //Load the chat package again to account for any changes
         bot.loadChat();
 
@@ -98,7 +109,7 @@
         themeLink: null,
         fbLink: null,
         youtubeLink: null,
-        website: null,
+        website: "What are you trying to do, stalk me?!? (gir.tf)",
         intervalMessages: ["Ayy lmao!"],
         messageInterval: 5,
         songstats: true,
