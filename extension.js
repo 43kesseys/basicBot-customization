@@ -55,7 +55,7 @@
         botName: "girtehbot",
         language: "english",
         chatLink: "https://rawgit.com/43kesseys/basicBot/master/lang/en.json",
-        startupCap: 1, // 1-200
+        startupCap: 5, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
         maximumAfk: 120,
