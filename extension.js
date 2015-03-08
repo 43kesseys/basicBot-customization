@@ -54,7 +54,7 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "girtehbot",
         language: "english",
-        chatLink: "https://rawgit.com/43kesseys/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/girr/basicBot/master/lang/en.json",
         startupCap: 5, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
@@ -109,6 +109,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript('https://rawgit.com/43kesseys/basicBot/master/basicBot.js', extend);
+    $.getScript('https://rawgit.com/girr/basicBot/master/basicBot.js', extend);
 
 }).call(this);
